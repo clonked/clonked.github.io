@@ -1,0 +1,570 @@
+<HTML>
+<HEAD>
+<TITLE>Mediterranean Cruise</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+
+<script language="javaScript">
+<!--
+
+var version = 0;
+var picked = "none";
+
+function pop( pageName ) {
+  popup=open( "popup/" + pageName + ".html", "popup", "width=721,height=600,resizeable=no" );
+  clean=0;
+}
+
+function poptall( pageName ) {
+  popup=open( "popup/" + pageName + ".html", "popup", "width=540,height=712,resizeable=no" );
+  clean=0;
+}
+
+function popmap( pageName ) {
+  popup=open( "popup/" + pageName + ".html", "popup", "width=650,height=455,resizeable=no,scrollbars=yes" );
+  clean=0;
+}
+
+
+function endpop() {
+  if ( clean!=1 && !popup.closed ) {
+    popup.close();
+  }
+}
+
+//-->
+</script>
+
+<script language="javaScript1.1">
+<!--
+
+version = 3;
+
+function pop( pageName ) {
+  popup=open( "popup/" + pageName + ".html", "popup", "width=721,height=600,resizeable=no" );
+  clean=0;
+}
+
+function poptall( pageName ) {
+  popup=open( "popup/" + pageName + ".html", "popup", "width=540,height=712,resizeable=no" );
+  clean=0;
+}
+
+function popmap( pageName ) {
+  popup=open( "popup/" + pageName + ".html", "popup", "width=650,height=455,resizeable=no,scrollbars=yes" );
+  clean=0;
+}
+
+
+function endpop() {
+  if ( clean!=1 && !popup.closed ) {
+    popup.close();
+  }
+}
+
+//-->
+</script>
+
+<script language="javaScript">
+<!--
+
+if (version == 3){
+
+var clean=1;
+var pageName;
+var imageName;
+
+function pop( pageName ) {
+  popup=open( "popup/" + pageName + ".html", "popup", "width=721,height=600,resizeable=no" );
+  clean=0;
+}
+
+function poptall( pageName ) {
+  popup=open( "popup/" + pageName + ".html", "popup", "width=540,height=712,resizeable=no" );
+  clean=0;
+}
+
+function popmap( pageName ) {
+  popup=open( "popup/" + pageName + ".html", "popup", "width=650,height=455,resizeable=no,scrollbars=yes" );
+  clean=0;
+}
+
+
+function endpop() {
+  if ( clean!=1 && !popup.closed ) {
+    popup.close();
+  }
+}
+
+ top2_roll = new Image(60,142);
+ top2_roll.src = "library/library-top2-a.jpg";
+ top2_idle = new Image(60,142);
+ top2_idle.src = "library/library-top2.jpg";
+ 
+ top4_roll = new Image(60,142);
+ top4_roll.src = "library/library-top4-a.jpg";
+ top4_idle = new Image(60,142);
+ top4_idle.src = "library/library-top4.jpg";
+ 
+ top6_roll = new Image(60,142);
+ top6_roll.src = "library/library-top6-a.jpg";
+ top6_idle = new Image(60,142);
+ top6_idle.src = "library/library-top6.jpg";
+
+ mid2_roll = new Image(60,142);
+ mid2_roll.src = "library/library-mid2-a.jpg";
+ mid2_idle = new Image(60,142);
+ mid2_idle.src = "library/library-mid2.jpg";
+
+ mid4_roll = new Image(60,142);
+ mid4_roll.src = "library/library-mid4-a.jpg";
+ mid4_idle = new Image(60,142);
+ mid4_idle.src = "library/library-mid4.jpg";
+
+ mid6_roll = new Image(60,142);
+ mid6_roll.src = "library/library-mid6-a.jpg";
+ mid6_idle = new Image(60,142);
+ mid6_idle.src = "library/library-mid6.jpg";
+
+ mid8_roll = new Image(60,142);
+ mid8_roll.src = "library/library-mid8-a.jpg";
+ mid8_idle = new Image(60,142);
+ mid8_idle.src = "library/library-mid8.jpg";
+
+ bot2_roll = new Image(60,142);
+ bot2_roll.src = "library/library-bot2-a.jpg";
+ bot2_idle = new Image(60,142);
+ bot2_idle.src = "library/library-bot2.jpg";
+
+ bot4_roll = new Image(60,142);
+ bot4_roll.src = "library/library-bot4-a.jpg";
+ bot4_idle = new Image(60,142);
+ bot4_idle.src = "library/library-bot4.jpg";
+
+ bot6_roll = new Image(60,142);
+ bot6_roll.src = "library/library-bot6-a.jpg";
+ bot6_idle = new Image(60,142);
+ bot6_idle.src = "library/library-bot6.jpg";
+ 
+ bot8_roll = new Image(60,142);
+ bot8_roll.src = "library/library-bot8-a.jpg";
+ bot8_idle = new Image(60,142);
+ bot8_idle.src = "library/library-bot8.jpg";
+
+
+function overImg(objName){
+	if (version == 3){
+		if (picked != objName){
+			imgSrc = eval(objName + "_roll.src");
+			document[objName].src = imgSrc;
+		}
+	}
+}
+
+function outImg(objName){
+	if (picked != objName){
+		if (version == 3){
+			imgSrc = eval(objName + "_idle.src");
+			document[objName].src = imgSrc;
+		}
+	}
+}
+
+function onImg(objName){
+ 	if (version == 3){
+ 		if (picked != "none" && picked != objName){
+ 			imgSrc = eval(objName + "_act.src");
+ 			imgSrc2 = eval(picked + "_idle.src");
+ 			// document.clear();
+ 			document[objName].src = imgSrc;
+ 			document[picked].src = imgSrc2;
+ 			picked = (objName);
+		}
+		else if (picked == objName){
+		}
+		else{
+ 			imgSrc = eval(objName + "_act.src");
+ 			document[objName].src = imgSrc;
+ 			picked = (objName);
+		}
+	}
+}
+}
+//-->
+</script>
+
+<STYLE>A:link {
+	TEXT-DECORATION: none
+}
+A:visited {
+	TEXT-DECORATION: none
+}
+A:active {
+	TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+</STYLE>
+
+<META content="MSHTML 5.00.2919.6307" name=GENERATOR></HEAD>
+<BODY aLink=#800000 background="gfx/med-mot1.jpg" link=#800000 vLink=#ab5454>
+<DIV align=center>
+<center>
+<TABLE border=0 cellPadding=0 cellSpacing=0>
+  <TBODY>
+  <TR>
+    <TD align=right vAlign=bottom width=26><IMG height=23 
+      src="gfx/top-left.jpg" 
+    width=26></TD>
+    <TD align=middle 
+    background="gfx/top-bar.jpg" 
+    vAlign=bottom width=667>&nbsp; </TD>
+    <TD align=left vAlign=bottom width=57><IMG height=23 
+      src="gfx/top-right.jpg" 
+      width=57></TD></TR>
+  <TR>
+    <TD 
+    background="gfx/sml-left-bar.jpg" 
+    width=26>&nbsp; </TD>
+    <TD align=middle valign=center background="gfx/back.jpg" width=667>
+<IMG src="gfx/title.jpg">
+</TD>
+    <TD align=left 
+    background="gfx/sml-right-bar.jpg" 
+    vAlign=center width=57>&nbsp; </TD></TR>
+  <TR>
+    <TD align=right vAlign=top width=26><IMG height=28 
+      src="gfx/bot-left.jpg" 
+    width=26></TD>
+    <TD align=middle 
+    background="gfx/bot-bar.jpg" 
+    vAlign=top width=667>&nbsp; </TD>
+    <TD align=left vAlign=top width=57><IMG height=28 
+      src="gfx/bot-right.jpg" 
+      width=57></TD></TR></TBODY></TABLE></CENTER></DIV>
+<DIV align=center>
+<qqqq>
+<TABLE border=0 cellPadding=0 cellSpacing=0>
+  <TBODY>
+  <TR>
+    <TD width=26><IMG height=65 
+      src="gfx/lrg-top-left.jpg" 
+      width=26></TD>
+    <TD align=middle 
+    background="gfx/lrg-top-bar.jpg" 
+    vAlign=bottom width=667>
+      <P align=left><IMG height=65 
+      src="gfx/main-kusadasi.jpg" 
+      width=311></TD>
+
+
+<TD width=57><IMG height=65 
+      src="gfx/lrg-top-right.jpg" 
+      width=57></TD></TR>
+
+   
+    
+  <TR>
+    <TD background="gfx/left-bar.jpg" 
+    width=26>&nbsp; </TD>
+
+<TD align=left 
+    background="gfx/back.jpg" 
+    vAlign=top width=667>
+      <DIV align=center>
+      
+      <TABLE border=0 cellPadding=0 cellSpacing=0 width="95%">
+        <TBODY>
+        <TR>
+          <TD width="100%">&nbsp;
+            <DIV align>
+            
+            <B>
+            <FONT color=#004040 face="Book Antiqua" size=3>
+
+<i>Though we only spent half the day touring in and around the Turkish city of Kusadasi, you will find that a very large portion of the Family Federation feel it was one of the best ports we stopped in.  Whether you were interested in famous pilgrimage sites or the ancient Roman city of Ephesus, there was something for people of all interests.</i><p>
+
+<img src="gfx/day-3.jpg"><br>
+
+Our tour departed at the pleasant time of 12:30 p.m. so the group was able to take the morning easy and catch up on sleep.  When the tour departure time encroached, the group made its way to the Carousel Lounge, the meeting point for all off-ship departures.  Upon arrival at the Carousel Lounge the cruise staff sorted us into our tour groups and we set off for our bus.  We had a bit of a drive before we reached our first stop, the Church of St. John.  The church was built over the 2nd-century tomb of John the Apostle.  John wrote the fourth book of the New Testament here.<p>
+
+<table background="gfx/back.jpg" border=0 cellpadding=0 cellspacing=0 width=160 align=right>
+<tr>
+<td>
+<a class=popup href="javascript:pop('stjohnpanview')">
+<img src="pics/thumb-stjohnpanview.jpg" border=0>
+</a>
+<center><font size=-2 color=#004040 face="Book Antiqua">Ruins of the once great<br>Church of St. John.
+</font></center>
+</td>
+</tr>
+</table>
+
+When the bus pulled into the little parking area, the Church of St. John was visible a bit up the hill.  But between us and our destination were assortments of shoe polishers, flute salesmen, and other such goods.  Putting these people out of our minds we walked up to the site and began to learn about it.  The following are some of the structures we saw while touring the site.<p>
+
+<table background="gfx/back.jpg" border=0 cellpadding=3 cellspacing=3 align=center>
+<tr>
+<td width=160 valign=top align=left>
+<a class=popup href="javascript:pop('stjohnpillars')">
+<img src="pics/thumb-stjohnpillars.jpg" border=0>
+</a>
+<center><font size=-2 color=#004040 face="Book Antiqua">The tomb of St. John.
+</font></center>
+</td>
+
+<td width=160 align=middle>
+<a class=popup href="javascript:pop('stjohnstructure')">
+<img src="pics/thumb-stjohnstructure.jpg" border=0>
+</a>
+<center><font size=-2 color=#004040 face="Book Antiqua">Another surviving portion<br>of the cathedral.
+</font></center>
+</td>
+
+<td width=160 align=right>
+<a class=popup href="javascript:pop('stjohnfamilyphoto')">
+<img src="pics/thumb-stjohnfamilyphoto.jpg" border=0>
+</a>
+<center><font size=-2 color=#004040 face="Book Antiqua">The fam beside the<br>tomb of John himself.
+</font></center>
+</td>
+</tr>
+</table>
+
+During all this time some of us began to notice the mysterious absence of one Timothy Anderson.  
+
+<table background="gfx/back.jpg" border=0 cellpadding=0 cellspacing=0 width=160 align=left>
+<tr>
+<td>
+<img src="pics/timsmugshot.jpg" border=0>
+</a>
+<center><font size=-2 color=#004040 face="Book Antiqua">Tim - MIA?
+</font></center>
+</td>
+</tr>
+</table>
+
+This caused some worry.  And when Tim finally reappeared, he gave no clear explanation as to his elongated disappearance.  Little did we know, the truth would shock us.  This matter will have to be continued on the next page however.<p>
+
+Although it is not evident today, in ancient times the Basilica of St. John was part of the city of Ephesus.  The Basilica was once topped with 11 domes and rivaled Istanbul's Hagia Sophia in scale.  It was built by Emperor Justinian and is one of the magnificent monuments of the Middle Ages.  Standing down the hill from St. John's is a single column, the only remaining portion of the Temple of Artemis, one of the Seven Wonders of the Ancient World.  This pagan temple was torn down once Christianity was adopted.  Interestingly, most of the marble pillars from the temple were carried to Istanbul to be used in the construction of the Hagia Sophia.<p>
+
+Both of Jesus' disciples John and Paul lived in Ephesus as did the Virgin Mary.  Paul spent six years preaching about Christianity from his workshop in Ephesus.  John spent the last years of his life in Ephesus and wrote the fourth book of the New Testament here.  And Mary found refuge after the death of Jesus in a peaceful forested valley nearby.  From the very first days of Christianity, this site has been a holy place of pilgrimage.<p>
+
+Once the glorious Roman capital of Asia Minor, it was in Ephesus that Mark Antony and Cleopatra rode in procession, St. Paul preached against the goddess Artemis, and St. John and the Virgin Mary spent their last days.  The history of Ephesus is so incredibly extensive! <p>
+
+At its height Ephesus was an extremely well-off Roman seaside town and a major commercial center with 300,000 inhabitants.  As can be assumed, Ephesus thrived because of its port-status, living off its imports and exports.  However, as the years past, the sea receded, and with that went the city's popularity.<p>
+
+<table background="gfx/back.jpg" border=0 cellpadding=0 cellspacing=0 width=368 align=right>
+<tr>
+<td>
+<a class=popup href="javascript:popmap('ephesusmap')">
+<img src="pics/thumb-ephesusmap.jpg" border=0>
+</a>
+<center><font size=-2 color=#004040 face="Book Antiqua">A map of the city of Ephesus.  Click the picture for a larger version.
+</font></center>
+</td>
+</tr>
+</table>
+
+Following the map-picture to the right, we entered the city a little before the Basilica and proceeded to look around the Odeon, which is a small amphitheather capable of seating fifteen hundred people.  The constructor, Vedius Antonius, built it to hold small concerts and plays.  After touring the Odeon we slowly traveled forward, admiring the remains of ancient Roman architecture all around us.<p>
+
+<table background="gfx/back.jpg" border=0 cellpadding=0 cellspacing=0 width=160 align=left>
+<tr>
+<td>
+<center>
+<a class=popup href="javascript:poptall('ephesuspillars')">
+<img src="pics/thumb-ephesuspillars.jpg" border=0><br>
+</a>
+<font size=-2 color=#004040 face="Book Antiqua">The last standing pillars to<br>the Temple of Domitian.
+</font></center>
+</td>
+</tr>
+
+<tr>
+<td>
+<center>
+<a class=popup href="javascript:pop('ephesuswalkway')">
+<img src="pics/thumb-ephesuswalkway.jpg" border=0><br>
+</a>
+<font size=-2 color=#004040 face="Book Antiqua">Looking down Curetes Street toward the Gate of Hercules.
+</font></center>
+</td>
+</tr>
+</table>
+
+We continued forward until we came to the giant open area (cobblestoned none-the-less) that sat before the remains of the once great Domitian Place.  Sitting in this area was the Temple of Domitian, constructed to honor Emperor Domitian.  This two-floored building contained warehouses and shops on the first floor and the temple on the second floor. 
+
+<table background="gfx/back.jpg" border=0 cellpadding=0 cellspacing=0 width=160 align=right>
+<tr>
+<td>
+<center>
+<a class=popup href="javascript:poptall('ephesuscarving')">
+<img src="pics/thumb-ephesuscarving.jpg" border=0><br>
+</a>
+<font size=-2 color=#004040 face="Book Antiqua">A carving resting near<br>the Gate of Hercules.
+</font></center>
+</td>
+</tr>
+</table> 
+
+We continued over to the Gate of Hercules which was once an archway that led onto Curetes Street.  Though it still leads onto the street, the top of the arch has since fallen, and only the columns remain as a reminder of it.  Heading through the gate and down onto Curetes Street, we were presented with a pleasant view both behind and in front<br>of us.<p>
+
+<table background="gfx/back.jpg" border=0 cellpadding=0 cellspacing=0 width=160 align=right>
+<tr>
+<td>
+<center>
+<a class=popup href="javascript:pop('dadonoldtoilets')">
+<img src="pics/thumb-dadonoldtoilets.jpg" border=0><br>
+</a>
+<font size=-2 color=#004040 face="Book Antiqua">Tim taking a break in<br>the bathhouse toilets.
+</font></center>
+</td>
+</tr>
+</table>
+
+We continued down the road and came upon the bathhouses, amoungst a wide array of structures.  There was a gymnasium, frigidarium, resting and reading rooms.  Now only the Hadrian Temple lay between us and the trump card:
+
+<p>
+<img src="gfx/librarycelus.jpg"><br>
+<p>
+
+<table background="gfx/back.jpg" border=0 cellpadding=0 cellspacing=0 width=160 align=left>
+<tr>
+<td>
+<center>
+<img src="pics/thumb-ephesuslibrary.jpg" border=0><br>
+<font size=-2 color=#004040 face="Book Antiqua">The Library of Celsus<br>in all its glory.
+</font></center>
+</td>
+</tr>
+</table>
+The library was built in 135 A.D. under the order of C. Julius in honor of his father, C. Celsus who had been the governor of Asia Minor.  Leading up to the library are four statues, two of which symbolize Justice and Virtue.  If one heads to the back of the library you can see the tomb of Celsus, a stunning white marble sarcophagus.  Since the Library of Celsus can't be done justice by a mere picture, the folks at Clonked! Productions have pulled a trump card of their own.  Continue and learn my young padewon.<p>  Thanks to the wonderful people at Clonked! Productions, the Library of Celsus is viewable in Zooming Clonk'o'vision.  Please read on for instructions on how to operate this device.  Don't worry, it's easier than pie.<p>
+
+<img src="gfx/clonkovision-small2.jpg" border=0> is a spectacular device which allows you to zoom in upon a section of the library at Ephesus merely by clicking on the section of the great library you wish to view more closely.  To determine what sections of the library can be zoomed in on, merely run your mouse over areas of interest until a <font color="#BD1003">red box</font> surrounds the section.  Then simply click the area once to zoom in upon it.  (Note: If for some reason the part of the library you click on doesn't zoom, just click the refresh button on your browser menu bar up top)<p>
+
+
+<center>
+<table background="gfx/back.jpg" border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=640>
+<img src="library/library-top1.jpg" border=0><a class=popup href="javascript:pop('library-arch1')" onMouseOver="overImg('top2')" onMouseOut="outImg('top2')" onClick="onImg('top2')"><img name="top2" src="library/library-top2.jpg" border=0></a><img src="library/library-top3.jpg" border=0><a class=popup href="javascript:pop('library-arch2')" onMouseOver="overImg('top4')" onMouseOut="outImg('top4')" onClick="onImg('top4')"><img name="top4" src="library/library-top4.jpg" border=0></a><img src="library/library-top5.jpg" border=0><a class=popup href="javascript:pop('library-arch3')" onMouseOver="overImg('top6')" onMouseOut="outImg('top6')" onClick="onImg('top6')"><img name="top6" src="library/library-top6.jpg" border=0></a><img src="library/library-top7.jpg" border=0><img src="library/library-openarea1.jpg" border=0><img src="library/library-mid1.jpg" border=0><a class=popup href="javascript:pop('library-column1')" onMouseOver="overImg('mid2')" onMouseOut="outImg('mid2')" onClick="onImg('mid2')"><img name="mid2" src="library/library-mid2.jpg" border=0></a><img src="library/library-mid3.jpg" border=0><a class=popup href="javascript:pop('library-column2')" onMouseOver="overImg('mid4')" onMouseOut="outImg('mid4')" onClick="onImg('mid4')"><img name="mid4" src="library/library-mid4.jpg" border=0></a><img src="library/library-mid5.jpg" border=0><a class=popup href="javascript:pop('library-column3')" onMouseOver="overImg('mid6')" onMouseOut="outImg('mid6')" onClick="onImg('mid6')"><img name="mid6" src="library/library-mid6.jpg" border=0></a><img src="library/library-mid7.jpg" border=0><a class=popup href="javascript:pop('library-column4')" onMouseOver="overImg('mid8')" onMouseOut="outImg('mid8')" onClick="onImg('mid8')"><img name="mid8" src="library/library-mid8.jpg" border=0></a><img src="library/library-mid9.jpg" border=0><img src="library/library-openarea2.jpg" border=0><img src="library/library-bot1.jpg" border=0><a class=popup href="javascript:poptall('library-statue1')" onMouseOver="overImg('bot2')" onMouseOut="outImg('bot2')" onClick="onImg('bot2')"><img name="bot2" src="library/library-bot2.jpg" border=0></a><img src="library/library-bot3.jpg" border=0><a class=popup href="javascript:poptall('library-statue2')" onMouseOver="overImg('bot4')" onMouseOut="outImg('bot4')" onClick="onImg('bot4')"><img name="bot4" src="library/library-bot4.jpg" border=0></a><img src="library/library-bot5.jpg" border=0><a class=popup href="javascript:poptall('library-statue3')" onMouseOver="overImg('bot6')" onMouseOut="outImg('bot6')" onClick="onImg('bot6')"><img name="bot6" src="library/library-bot6.jpg" border=0></a><img src="library/library-bot7.jpg" border=0><a class=popup href="javascript:poptall('library-statue4')" onMouseOver="overImg('bot8')" onMouseOut="outImg('bot8')" onClick="onImg('bot8')"><img name="bot8" src="library/library-bot8.jpg" border=0></a><img src="library/library-bot9.jpg" border=0><img src="library/library-openarea3.jpg" border=0></td>
+</tr>
+</table>
+</center><p>
+
+We hung around the library for a good fifteen to twenty minutes taking pictures and admiring the beauty of this ancient structure.  The cruise staff took a group photo of us as well, but that is unavailable for viewing.  When time ran short we headed down the long Marble Road to our next stop, the Great Amphitheater.<p>
+
+<table background="gfx/back.jpg" border=0 cellpadding=0 cellspacing=0 width=160 align=right>
+<tr>
+<td>
+<center>
+<a class=popup href="javascript:pop('greattheater')">
+<img src="pics/thumb-greattheater.jpg" border=0><br>
+</a>
+<font size=-2 color=#004040 face="Book Antiqua">The Great Amphitheater from afar.
+</font></center>
+</td>
+</tr>
+</table>
+
+Our guide unlocked the metal gate separating us and the massive stone theater.  We were allowed to enter and look around for a bit before the guide taught us about it.  The theater could house 25,000 people.  Imagine yourself being in the audience when Paul made his famous speech to the Ephesians.<p>
+
+The theater is still used today.  Musicians have held concerts in it.  We were informed that another concert would take place in the theater for the Millenium Celebration.  Slowly we exited the theater and headed down the Stadium Road to meet our buses.<p>
+
+<table background="gfx/back.jpg" border=0 cellpadding=0 cellspacing=0 width=160 align=left>
+<tr>
+<td>
+<center>
+<a class=popup href="javascript:poptall('virginmaryfountain')">
+<img src="pics/thumb-virginmaryfountain.jpg" border=0><br>
+</a>
+<font size=-2 color=#004040 face="Book Antiqua">The Fountain of St. Mary<br>with its healing water.
+</font></center>
+</td>
+</tr>
+</table>
+
+Our tour of Ephesus and surrounds had one more stop, the House of the Virgin Mary.  After Jesus died, Mary came to Ephesus with John who looked after her.  She lived here on a secluded hill in the woods until she died around 35 A.D.  We walked through the tiny house where there is a peaceful shrine with a statue of her, which was found when the ruins of the house were discovered.  We then headed down the steps to the fountains, which are said to have life restoring elements.  Everyone drank from the holy fountains and some stopped to tie a piece of paper to the Prayer Wall.  Leaving the holy grounds we made our way to the buses which were now cruise ship bound.<p>
+
+We returned to the ship at about four o'clock leaving the whole afternoon to ourselves.  Everyone took this time to relax and reflect on the day.  It was casual attire for dinner, so everyone got dressed and we met at seven for cocktails in the Starlight Lounge.  Following dinner everyone parted for the evening to retire to their cabins, still enthralled by the day's sights.<p>
+
+<i>As you can see, our day in Ephesus, port stop Kusadasi, was quite the experience.  But there's one nagging question in most people's minds.  What exactly was Tim doing during his unexplained disappearance?  We looked deep into this mystery, and what we found may surprise you.  But it is the truth, and alas, the truth can hurt.  Turn the page to learn this truth, or if you're hungry, back to look over the cruise food again.</i><p>
+
+
+
+</FONT></P></TD></TR></TBODY></TABLE></CENTER></DIV>
+     <table  border=0 cellPadding=0 cellSpacing=0 width=92% align=center>
+<table border=0 cellPadding=0 cellSpacing=0 width=634 align=center>
+<tr>
+<td width=58 align=left>
+<A href="cruisefood.html" target=_top><IMG border=0 src="gfx/arrow-left.gif"></A>
+</td>
+<td width=90 align=left>
+<font size=-2 color=#004040 face="Book Antiqua">Back to the cruise food
+</td>
+<td width=338>
+</td>
+<td>
+<td width=90 align=right>
+<font size=-2 color=#004040 face="Book Antiqua">Learn about Tim's coin caper 
+</td>
+<td width=58 align=right>
+<A href="coins.html" target=_top><IMG border=0 src="gfx/arrow-right.gif"></A>
+</td>
+</tr>
+</table></TD>
+    
+<TD align=left 
+    background="gfx/right-bar.jpg" 
+    vAlign=top width=57>&nbsp;
+      </TR>
+
+</TR>
+  <TR>
+    <TD align=right vAlign=top width=26><IMG height=28 
+      src="gfx/bot-left.jpg" 
+    width=26></TD>
+    <TD align=middle 
+    background="gfx/bot-bar.jpg" 
+    vAlign=top width=667>&nbsp; </TD>
+    <TD align=left vAlign=top width=57><IMG height=28 
+      src="gfx/bot-right.jpg" 
+      width=57></TD></TR></TBODY></TABLE></CENTER></DIV>
+<DIV align=center>
+<CENTER>
+
+<TABLE border=0 cellPadding=0 cellSpacing=0>
+  <TBODY>
+  <TR>
+    <TD align=right vAlign=bottom width=26><IMG height=23 
+      src="gfx/top-left.jpg" 
+    width=26></TD>
+    <TD align=middle 
+    background="gfx/top-bar.jpg" 
+    vAlign=bottom width=667>&nbsp; </TD>
+    <TD align=left vAlign=bottom width=57><IMG height=23 
+      src="gfx/top-right.jpg" 
+      width=57></TD></TR>
+  <TR>
+    <TD 
+    background="gfx/sml-left-bar.jpg" 
+    width=26>&nbsp; </TD>
+    <TD align=middle 
+    background="gfx/back.jpg" 
+    vAlign=center width=667><FONT color=#004040 face="Book Antiqua" 
+      size=2>Content, pictures and text on <a href="index.html">Mediterranean Cruise Adventure</a> is copywrite © <a href="mailto:clonk@tech-base.com">Nathan Anderson</A>, Clonked! Productions and respective parties.  All rights reserved.  Not to be copied, altered or used without explicit written consent by <a href="mailto:clonk@tech-base.com">Nathan Anderson</A>.  Submit all comments and questions to the <a href="mailto:clonk@tech-base.com">webmaster</A>.</TD>
+    <TD align=left 
+    background="gfx/sml-right-bar.jpg" 
+    vAlign=center width=57>&nbsp; </TD></TR>
+  <TR>
+    <TD align=right vAlign=top width=26><IMG height=28 
+      src="gfx/bot-left.jpg" 
+    width=26></TD>
+    <TD align=middle 
+    background="gfx/bot-bar.jpg" 
+    vAlign=top width=667>&nbsp; </TD>
+    <TD align=left vAlign=top width=57><IMG height=28 
+      src="gfx/bot-right.jpg" 
+      width=57></TD></TR></TBODY></TABLE></CENTER>
+</DIV>
+</BODY>
+</HTML>

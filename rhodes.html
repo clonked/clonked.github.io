@@ -1,0 +1,445 @@
+<HTML>
+<HEAD>
+<TITLE>Mediterranean Cruise</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+
+<script language="javaScript">
+<!--
+
+var version = 0;
+var picked = "none";
+
+function pop( pageName ) {
+  popup=open( "popup/" + pageName + ".html", "popup", "width=721,height=600,resizeable=no" );
+  clean=0;
+}
+
+function poptall( pageName ) {
+  popup=open( "popup/" + pageName + ".html", "popup", "width=540,height=712,resizeable=no" );
+  clean=0;
+}
+
+function popmap( pageName ) {
+  popup=open( "popup/" + pageName + ".html", "popup", "width=650,height=455,resizeable=no,scrollbars=yes" );
+  clean=0;
+}
+
+
+function endpop() {
+  if ( clean!=1 && !popup.closed ) {
+    popup.close();
+  }
+}
+
+
+//-->
+</script>
+
+<script language="javaScript1.1">
+<!--
+
+var version = 0;
+var picked = "none";
+
+function pop( pageName ) {
+  popup=open( "popup/" + pageName + ".html", "popup", "width=721,height=600,resizeable=no" );
+  clean=0;
+}
+
+function poptall( pageName ) {
+  popup=open( "popup/" + pageName + ".html", "popup", "width=540,height=712,resizeable=no" );
+  clean=0;
+}
+
+function popmap( pageName ) {
+  popup=open( "popup/" + pageName + ".html", "popup", "width=650,height=455,resizeable=no,scrollbars=yes" );
+  clean=0;
+}
+
+
+function endpop() {
+  if ( clean!=1 && !popup.closed ) {
+    popup.close();
+  }
+}
+
+
+version = 3;
+
+//-->
+</script>
+
+<script language="javaScript">
+<!--
+
+
+if (version == 3){
+
+
+
+ wall1_roll = new Image(60,142);
+ wall1_roll.src = "pics/wall-statue1b.jpg";
+ wall1_idle = new Image(60,142);
+ wall1_idle.src = "pics/wall-statue1.jpg";
+
+
+ wall2_roll = new Image(60,142);
+ wall2_roll.src = "pics/wall-statue2b.jpg";
+ wall2_idle = new Image(60,142);
+ wall2_idle.src = "pics/wall-statue2.jpg";
+
+
+ wall3_roll = new Image(60,142);
+ wall3_roll.src = "pics/wall-statue3b.jpg";
+ wall3_idle = new Image(60,142);
+ wall3_idle.src = "pics/wall-statue3.jpg";
+
+ wall4_roll = new Image(60,142);
+ wall4_roll.src = "pics/wall-statue4b.jpg";
+ wall4_idle = new Image(60,142);
+ wall4_idle.src = "pics/wall-statue4.jpg";
+
+ wall5_roll = new Image(60,142);
+ wall5_roll.src = "pics/wall-statue5b.jpg";
+ wall5_idle = new Image(60,142);
+ wall5_idle.src = "pics/wall-statue5.jpg";
+
+
+ wall6_roll = new Image(60,142);
+ wall6_roll.src = "pics/wall-statue6b.jpg";
+ wall6_idle = new Image(60,142);
+ wall6_idle.src = "pics/wall-statue6.jpg";
+
+
+ wall7_roll = new Image(60,142);
+ wall7_roll.src = "pics/wall-statue7b.jpg";
+ wall7_idle = new Image(60,142);
+ wall7_idle.src = "pics/wall-statue7.jpg";
+
+
+ wall8_roll = new Image(60,142);
+ wall8_roll.src = "pics/wall-statue8b.jpg";
+ wall8_idle = new Image(60,142);
+ wall8_idle.src = "pics/wall-statue8.jpg";
+
+
+
+function overImg(objName){
+	if (version == 3){
+		if (picked != objName){
+			imgSrc = eval(objName + "_roll.src");
+			document[objName].src = imgSrc;
+		}
+	}
+}
+
+function outImg(objName){
+	if (picked != objName){
+		if (version == 3){
+			imgSrc = eval(objName + "_idle.src");
+			document[objName].src = imgSrc;
+		}
+	}
+}
+
+function onImg(objName){
+ 	if (version == 3){
+ 		if (picked != "none" && picked != objName){
+ 			imgSrc = eval(objName + "_act.src");
+ 			imgSrc2 = eval(picked + "_idle.src");
+ 			// document.clear();
+ 			document[objName].src = imgSrc;
+ 			document[picked].src = imgSrc2;
+ 			picked = (objName);
+		}
+		else if (picked == objName){
+		}
+		else{
+ 			imgSrc = eval(objName + "_act.src");
+ 			document[objName].src = imgSrc;
+ 			picked = (objName);
+		}
+	}
+}
+}
+//-->
+</script>
+<STYLE>A:link {
+	TEXT-DECORATION: none
+}
+A:visited {
+	TEXT-DECORATION: none
+}
+A:active {
+	TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+</STYLE>
+
+<META content="MSHTML 5.00.2919.6307" name=GENERATOR></HEAD>
+<BODY aLink=#800000 background="gfx/med-mot1.jpg" link=#800000 vLink=#ab5454>
+<DIV align=center>
+<center>
+<TABLE border=0 cellPadding=0 cellSpacing=0>
+  <TBODY>
+  <TR>
+    <TD align=right vAlign=bottom width=26><IMG height=23 
+      src="gfx/top-left.jpg" 
+    width=26></TD>
+    <TD align=middle 
+    background="gfx/top-bar.jpg" 
+    vAlign=bottom width=667>&nbsp; </TD>
+    <TD align=left vAlign=bottom width=57><IMG height=23 
+      src="gfx/top-right.jpg" 
+      width=57></TD></TR>
+  <TR>
+    <TD 
+    background="gfx/sml-left-bar.jpg" 
+    width=26>&nbsp; </TD>
+    <TD align=middle valign=center background="gfx/back.jpg" width=667>
+<IMG src="gfx/title.jpg">
+</TD>
+    <TD align=left 
+    background="gfx/sml-right-bar.jpg" 
+    vAlign=center width=57>&nbsp; </TD></TR>
+  <TR>
+    <TD align=right vAlign=top width=26><IMG height=28 
+      src="gfx/bot-left.jpg" 
+    width=26></TD>
+    <TD align=middle 
+    background="gfx/bot-bar.jpg" 
+    vAlign=top width=667>&nbsp; </TD>
+    <TD align=left vAlign=top width=57><IMG height=28 
+      src="gfx/bot-right.jpg" 
+      width=57></TD></TR></TBODY></TABLE></CENTER></DIV>
+<DIV align=center>
+<qqqq>
+<TABLE border=0 cellPadding=0 cellSpacing=0>
+  <TBODY>
+  <TR>
+    <TD width=26><IMG height=65 
+      src="gfx/lrg-top-left.jpg" 
+      width=26></TD>
+    <TD align=middle 
+    background="gfx/lrg-top-bar.jpg" 
+    vAlign=bottom width=667>
+      <P align=left><IMG height=65 
+      src="gfx/main-rhodes.jpg" 
+      width=311></TD>
+
+
+<TD width=57><IMG height=65 
+      src="gfx/lrg-top-right.jpg" 
+      width=57></TD></TR>
+
+   
+    
+  <TR>
+    <TD background="gfx/left-bar.jpg" 
+    width=26>&nbsp; </TD>
+
+<TD align=left 
+    background="gfx/back.jpg" 
+    vAlign=top width=667>
+      <DIV align=center>
+      
+      <TABLE border=0 cellPadding=0 cellSpacing=0 width="95%">
+        <TBODY>
+        <TR>
+          <TD width="100%">&nbsp;
+            <DIV align>
+            
+            <B>
+            <FONT color=#004040 face="Book Antiqua" size=3>
+
+<i>Rhodes was the last stop we were going to make in Greece before we ended the cruise in Athens.  The town boasted a lot to see; the Church of Our Lady and the Chapel of St. George on Mount Philerimos, the old walled town of Rhodes and the extravagant Palace of the Grand Masters.  All that and a walk around the harbor where the Colossus of Rhodes - one of the Seven Wonders of the Ancient World - stood astride its entrance spelled one interesting day.</i><p>
+
+Another tour day, another early morning.  Everyone dressed, washed and breakfasted in time for the eight thirty a.m. bus departure.  Our first stop: Mount Philerimos.<p>
+
+<table background="gfx/back.jpg" border=0 cellpadding=0 cellspacing=0 width=160 align=right>
+<tr>
+<td>
+<a class=popup href="javascript:pop('rhodeslizard')">
+<img src="pics/thumb-rhodeslizard.jpg" border=0>
+</a>
+<center><font size=-2 color=#004040 face="Book Antiqua">A little lizard that lived<br>at the monastery.
+</font></center>
+</td>
+</tr>
+</table>
+
+We arrived at the Church of Our Lady and proceeded to climb a terraced pathway surrounded by shrubs until we reached the first of the establishment's ruins.  Yes the guide talked, but that's not what everyone had their eyes on.  The show had been stolen, by none another that Mr. Lizard himself.  The little fellow would come out from his crack in the rocks to sun himself, and dart back in when humans got too near.  This continued until we advanced further into the complex.<p>
+
+<table background="gfx/back.jpg" border=0 cellpadding=0 cellspacing=0 width=160 align=left>
+<tr>
+<td>
+<a class=popup href="javascript:pop('rhodesheidipicture')">
+<img src="pics/thumb-rhodesheidipicture.jpg" border=0>
+</a>
+<center><font size=-2 color=#004040 face="Book Antiqua">Heidi posing on a beautiful<br>horizon backdrop.  The Turkish coast lies just 12 miles across<br>the Mediterranean.
+</font></center>
+</td>
+</tr>
+</table>
+
+The tour led us through a series of courtyards and hallways until we were given the option to roam freely, so we traveled toward the observation point, nearly 1,000 feet above sea level, from which excellent views were available.  On the walk back to the bus a field full of sheep were visible, and provided another spark of amusement to the more dissuaded members of the Family Federation.  After everyone piled into the bus we were off to our next destination, the 14th century Palace of the Grand Masters.<p>
+
+<table background="gfx/back.jpg" border=0 cellpadding=0 cellspacing=0 width=160 align=right>
+<tr>
+<td>
+<a class=popup href="javascript:pop('rhodesfishmosaic')">
+<img src="pics/thumb-rhodesfishmosaic.jpg" border=0>
+</a>
+<center><font size=-2 color=#004040 face="Book Antiqua">An extremely detailed mosaic<br>of many different fish.
+</font></center>
+</td>
+</tr>
+</table>
+
+The bus was parked a fair distance away from the palace, which gave us the opportunity to walk the cobblestone streets and take in much more of the architecture that surrounded us.  Cats lounged about and came running to people for some petting or perhaps food.  We finally came to the archway that we had to pass through  
+
+<table background="gfx/back.jpg" border=0 cellpadding=0 cellspacing=0 width=160 align=left>
+<tr>
+<td>
+<a class=popup href="javascript:pop('rhodespeacockmosaic')">
+<img src="pics/thumb-rhodespeacockmosaic.jpg" border=0>
+</a>
+<center><font size=-2 color=#004040 face="Book Antiqua">Another of the Palace's<br>extravagant mosaics.
+</font></center>
+</td>
+</tr>
+</table>
+
+to enter the palace.  Entering, we turned to the left and climbed a set of stairs to enter a giant room decorated with mosaics on the floor, walls and ceiling.  The fish mosaic was one of these.  Each room we went through was as elaborately decorated as the first, if not more so.  When at last our tour of the inner palace came to a close, we were directed into the courtyard to admire the wall of the palace.<p>
+
+The entertainment engineers at Clonked! Productions have once again created another monument picture viewable in <img src="gfx/clonkovision-small2.jpg" border=0>.  We would like to apologize, however, for the image below is the result of several spliced together, which accounts for the rather obvious lighting differences in the picture.  Once again, to determine what sections of the wall can be zoomed in on, merely run your mouse over areas of interest until an <font color="#BD1003">orange box</font> surrounds the section.  Then simply click the area once to zoom in upon it.<p>
+
+
+<table cellpadding=0 cellspacing=0 background="/gfx/back.jpg" align=center>
+<tr>
+<td>
+<img src="pics/wall-top.jpg"><br><a class=popup href="javascript:poptall('wall-statue1')" onMouseOver="overImg('wall1')" onMouseOut="outImg('wall1')" onClick="onImg('wall1')"><img src="pics/wall-statue1.jpg" name="wall1" border=0></a><a class=popup href="javascript:poptall('wall-statue2')" onMouseOver="overImg('wall2')" onMouseOut="outImg('wall2')" onClick="onImg('wall2')"><img src="pics/wall-statue2.jpg" name="wall2" border=0></a><a class=popup href="javascript:poptall('wall-statue3')" onMouseOver="overImg('wall3')" onMouseOut="outImg('wall3')" onClick="onImg('wall3')"><img src="pics/wall-statue3.jpg" name="wall3" border=0></a><a class=popup href="javascript:poptall('wall-statue4')" onMouseOver="overImg('wall4')" onMouseOut="outImg('wall4')" onClick="onImg('wall4')"><img src="pics/wall-statue4.jpg" name="wall4" border=0></a><a class=popup href="javascript:poptall('wall-statue5')" onMouseOver="overImg('wall5')" onMouseOut="outImg('wall5')" onClick="onImg('wall5')"><img src="pics/wall-statue5.jpg" name="wall5" border=0></a><a class=popup href="javascript:poptall('wall-statue6')" onMouseOver="overImg('wall6')" onMouseOut="outImg('wall6')" onClick="onImg('wall6')"><img src="pics/wall-statue6.jpg" name="wall6" border=0></a><a class=popup href="javascript:poptall('wall-statue7')" onMouseOver="overImg('wall7')" onMouseOut="outImg('wall7')" onClick="onImg('wall7')"><img src="pics/wall-statue7.jpg" name="wall7" border=0></a><a class=popup href="javascript:poptall('wall-statue8')" onMouseOver="overImg('wall8')" onMouseOut="outImg('wall8')" onClick="onImg('wall8')"><img src="pics/wall-statue8.jpg" name="wall8" border=0></a><img src="pics/wall-statue9.jpg"><br><img src="pics/wall-bottom.jpg">
+<center><font size=-2 color=#004040 face="Book Antiqua">The Palace of the Grand Masters Wall.  Use Zooming Clonk'o'vision.
+</td>
+</tr>
+</table>
+<p>
+
+
+
+We departed the palace to begin our walking tour of Rhodes the Old Town.  This began immediately   
+
+<table background="gfx/back.jpg" border=0 cellpadding=0 cellspacing=0 width=160 align=left>
+<tr>
+<td>
+<a class=popup href="javascript:pop('rhodesstreet')">
+<img src="pics/thumb-rhodesstreet.jpg" border=0>
+</a>
+<center><font size=-2 color=#004040 face="Book Antiqua">Knights' Road, one of the<br>oldest street in Rhodes. 
+</font></center>
+</td>
+</tr>
+</table>
+
+upon exiting the palace for when we turned right, the oldest remaining cobblestone street in Rhodes, recalling the days of the Crusaders was waiting to guide us.  The walk was quite relaxing, for it was cool in the shade of the buildings.  All around
+
+<table background="gfx/back.jpg" border=0 cellpadding=0 cellspacing=0 width=160 align=right>
+<tr>
+<td><center>
+<a class=popup href="javascript:poptall('rhodesdoorway')">
+<img src="pics/thumb-rhodesdoorway.jpg" border=0></a>
+<font size=-2 color=#004040 face="Book Antiqua"><br>An example of the beautiful<br>decor that surrounded us.
+</font></center>
+</td>
+</tr>
+</table>
+
+us we were presented with mounds upon mounds of eye candy, such as this interesting picture of the scenery seen through the doorway.  Our walk of the Old Town inevitably led to a shopping district, upon which the group skattered like mice after cheese into the surrounding shops.  T-shirts, sunglasses, medicinal herbs, it was all there.  The time came to leave and everyone reassembled and made their way for the bus.<p>
+
+The last segment of the tour was upon us.  All we had remaining was a driving tour along the west coast.  The pleasant scenery made this go by all the quicker.  Before we knew it, the tour was over.  Everyone spent the rest of the day either spending more time in Rhodes or returning to the ship to relax.  The casual dress dinner made a perfect end to the already excellent day.<p>
+
+<i>Now that you've read up on Rhodes you can either continue forward to learn about our wonderful Sea Day or retrace our steps through Santorini.</i><p>
+
+<table background="gfx/back.jpg" border=0 cellpadding=0 cellspacing=0 width=160 align=right>
+
+</table>
+
+</FONT></P></TD></TR></TBODY></TABLE></CENTER></DIV>
+     <table  border=0 cellPadding=0 cellSpacing=0 width=92% align=center>
+<table border=0 cellPadding=0 cellSpacing=0 width=634 align=center>
+<tr>
+<td width=58 align=left>
+<A href="santorini.html" target=_top><IMG border=0 src="gfx/arrow-left.gif"></A>
+</td>
+<td width=90 align=left>
+<font size=-2 color=#004040 face="Book Antiqua">Back to the day in Santorini
+</td>
+<td width=338>
+</td>
+<td>
+<td width=90 align=right>
+<font size=-2 color=#004040 face="Book Antiqua">On to the day at Sea
+</td>
+<td width=58 align=right>
+<A href="seaday.html" target=_top><IMG border=0 src="gfx/arrow-right.gif"></A>
+</td>
+</tr>
+</table></TD>
+    
+<TD align=left 
+    background="gfx/right-bar.jpg" 
+    vAlign=top width=57>&nbsp;
+      </TR>
+
+</TR>
+  <TR>
+    <TD align=right vAlign=top width=26><IMG height=28 
+      src="gfx/bot-left.jpg" 
+    width=26></TD>
+    <TD align=middle 
+    background="gfx/bot-bar.jpg" 
+    vAlign=top width=667>&nbsp; </TD>
+    <TD align=left vAlign=top width=57><IMG height=28 
+      src="gfx/bot-right.jpg" 
+      width=57></TD></TR></TBODY></TABLE></CENTER></DIV>
+<DIV align=center>
+<CENTER>
+
+<TABLE border=0 cellPadding=0 cellSpacing=0>
+  <TBODY>
+  <TR>
+    <TD align=right vAlign=bottom width=26><IMG height=23 
+      src="gfx/top-left.jpg" 
+    width=26></TD>
+    <TD align=middle 
+    background="gfx/top-bar.jpg" 
+    vAlign=bottom width=667>&nbsp; </TD>
+    <TD align=left vAlign=bottom width=57><IMG height=23 
+      src="gfx/top-right.jpg" 
+      width=57></TD></TR>
+  <TR>
+    <TD 
+    background="gfx/sml-left-bar.jpg" 
+    width=26>&nbsp; </TD>
+    <TD align=middle 
+    background="gfx/back.jpg" 
+    vAlign=center width=667><FONT color=#004040 face="Book Antiqua" 
+      size=2>Content, pictures and text on <a href="index.html">Mediterranean Cruise Adventure</a> is copywrite © <a href="mailto:clonk@tech-base.com">Nathan Anderson</A>, Clonked! Productions and respective parties.  All rights reserved.  Not to be copied, altered or used without explicit written consent by <a href="mailto:clonk@tech-base.com">Nathan Anderson</A>.  Submit all comments and questions to the <a href="mailto:clonk@tech-base.com">webmaster</A>.</TD>
+    <TD align=left 
+    background="gfx/sml-right-bar.jpg" 
+    vAlign=center width=57>&nbsp; </TD></TR>
+  <TR>
+    <TD align=right vAlign=top width=26><IMG height=28 
+      src="gfx/bot-left.jpg" 
+    width=26></TD>
+    <TD align=middle 
+    background="gfx/bot-bar.jpg" 
+    vAlign=top width=667>&nbsp; </TD>
+    <TD align=left vAlign=top width=57><IMG height=28 
+      src="gfx/bot-right.jpg" 
+      width=57></TD></TR></TBODY></TABLE></CENTER>
+</DIV>
+</BODY>
+</HTML>

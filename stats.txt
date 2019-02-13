@@ -1,0 +1,14 @@
+Nathan's Mediterranean Cruise Adventure
+version 1.00
+release 1.00
+
+stats
+-----
+CGI? No
+JAVA? Yes
+HTML PAGES: 150
+IMAGES: 538
+MAN HOURS: 150+
+INITIAL # CD'S PRODUCED: 1
+CUPS OF COFFEE NIGHT IT WAS DUE: 6
+HOURS OF AGGRIVATION: lots
